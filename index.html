@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Amar abdallh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        [data-aos="fade-blur"]{
+        opacity:0;
+        transform: translateY(40px);
+        filter: blur(8px);
+        transition-property: opacity, transform, filter;
+        }
+        [data-aos="fade-blur"].aos-animate{
+        opacity:1;
+        transform: translateY(0);
+        filter: blur(0);
+        }
+    </style>
+</head>
+<body class="space-y-16 lg:space-y-20 ">
+    <nav class=" shadow-md fixed w-full z-10   ">
+        <div class="container max-w-7xl mx-auto px-6 py-3 flex justify-between md:justify-center items-center">
+            <h1 class="h1 md:hidden  py-2">
+            <span class=" bg-[var(--primary-cl)] rounded-full pl-3 py-1 aline-center ">A </span>MAR
+            </h1>
+            <!-- menu desktop -->
+            <ul class="hidden md:flex gap-4  items-center">
+                <li class="hover:scale-105 transition duration-500"><a href="#Home" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Home</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#About" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">About</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#Experience" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Experience</a></li>
+                <li><a href="#Home" ><h1 class="h1 py-2 md:px-2 lg:px-4 md:text-3xl lg:text-4xl "><span class=" bg-[var(--primary-cl)] rounded-full pl-3 py-1 aline-center">A </span>MAR
+                </h1></a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#Services" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Services</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#projects" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Projects</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#contact" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Contact</a></li>
+            </ul>
+
+            <!-- mobile menu button -->
+            <button id="menuBtn" class="md:hidden text-3xl text-[var(--primary-cl)]">
+            ☰
+            </button>
+         </div>
+        <!-- mobile menu -->
+        <div id="mobileMenu" class="hidden px-6 pb-4 md:hidden">
+            <ul class="flex flex-col gap-6 mt-4">
+                <li class="hover:scale-105 transition duration-500"><a href="#Home" class="hover:text-[var(--primary-cl)] transition duration-500 ">Home</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#About" class="hover:text-[var(--primary-cl)] transition duration-500 ">About</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#Experience" class="hover:text-[var(--primary-cl)] transition duration-500 ">Experience</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#Services" class="hover:text-[var(--primary-cl)] transition duration-500 ">Services</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#projects" class="hover:text-[var(--primary-cl)] transition duration-500 ">Projects</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="#contact" class="hover:text-[var(--primary-cl)] transition duration-500 ">Contact</a></li>
+            </ul>
+            <div class="flex gap-4 justify-center py-8">
+                <a href="https://github.com/amar754" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://www.linkedin.com/in/amar-abdallh-2476303b1/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://wa.me/201027958582" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amarabdullah.div@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://www.facebook.com/amar.baktout/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f text-[var(--bg)]  hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://www.instagram.com/3mar_abdallh/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="back-gol" id="Home">
+        <br >
+        <main  class="relative ">
+            <div class="container flex flex-col justify-center items-center gap-4 m-auto pt-16">
+                <div   class=" flex flex-col justify-center items-center gap-4 m-auto pt-4 md:flex-row flex-1 md:hidden lg:grid lg:grid-cols-3 lg:justify-items-center">
+                    <div data-aos="fade-blur"data-aos-delay="150" >
+                        <h1 class="h1 text-[var(--text-min-col)] leading-9 relative tracking-wide " >I’m<br>
+                        <span class="mark">AMAR ABDULLAH</span> <br>
+                            Front-end developer</h1>
+                    </div>
+                    <div data-aos="fade-blur"data-aos-delay="250" class="flex-1 lg:order-2">
+                        <p class="h3 text-[var(--text-sec-col)] text-center ">Front-End Developer Building Fast, Modern & Business-Focused Websites</p>
+                    </div>
+                    <div data-aos="fade-blur"data-aos-delay="400" class="circle my-4  lg:order-1">
+                        <img src="photos/me 1.png" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-blur" class=" flex-row items-center gap-6 pt-4 hidden md:flex lg:hidden">
+                    <div class="flex gap-6 flex-col justify-start items-start w-80">
+                        <div>
+                            <h1 class="h1 text-[var(--text-min-col)] leading-9 relative tracking-wide " >I’m<br>
+                            <span class="mark">AMAR ABDULLAH</span> <br>
+                                Front-end developer</h1>
+                        </div>
+                        <div>
+                            <p class="h3 text-[var(--text-sec-col)]  ">Front-End Developer Building Fast, Modern & Business-Focused Websites</p>
+                        </div>
+                    </div>
+                    <div class="circle my-4 ml-6 ">
+                        <img src="photos/me 1.png" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-blur"data-aos-delay="600"  class="bot-box rounded-full border-white border-2 border-dashed">
+                    <button class="spis-w bot h3 text-[16px]">DOWENLOD CV</button>
+                    <button class="bot h3"><a href="https://wa.me/201027958582" target="_blank">HIRE ME</a></button>
+                </div>
+                <div data-aos="fade-blur" data-aos-delay="600" class="flex gap-4 justify-center py-4">
+                    <a href="https://github.com/amar754" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                    <a href="https://www.linkedin.com/in/amar-abdallh-2476303b1/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                    <a href="https://wa.me/201027958582" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amarabdullah.div@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                    <a href="https://www.facebook.com/amar.baktout/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f  hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                    <a href="https://www.instagram.com/3mar_abdallh/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram  hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                </div>
+                <div data-aos="fade-blur"data-aos-delay="300"  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-2 bg-[#ffffff47] rounded-2xl p-4 ">
+                        <div class="bot flex gap-2 items-center justify-center">
+                            <i class="fa-brands fa-html5 text-2xl text-[var(--bg)]"></i>
+                            <h5 class="h5">HTML</h5>
+                        </div>
+                        <div class="bot flex gap-2 items-center justify-center">
+                            <i class="fa-brands fa-css3-alt text-2xl text-[var(--bg)]"></i>
+                            <h5 class="h5">CSS</h5>
+                        </div>
+                        <div class="bot flex gap-2 items-center justify-center">
+                            <i class="fa-brands fa-bootstrap text-2xl text-[var(--bg)]"></i>
+                            <h5 class="h5">Bootstrap</h5>
+                        </div>
+                        <div class="bot flex gap-2 items-center justify-center">
+                            <i class="fa-brands fa-css3-alt text-2xl text-[var(--bg)]"></i>
+                            <h5 class="h5">Tailwind</h5>
+                        </div>
+                        <div class="bot flex gap-2 items-center justify-center">
+                            <i class="fa-brands fa-js text-2xl text-[var(--bg)]"></i>
+                            <h5 class="h5">JavaScript</h5>
+                        </div>
+                        <!-- <div class="bot flex gap-2 items-center justify-center">
+                            <i class="fa-brands fa-react text-2xl text-[var(--bg)]"></i>
+                            <h5 class="h5">React</h5>
+                        </div> -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <br id="About">
+    <section id="About">
+        <div  class="container">
+            <div data-aos="fade-blur" class="title">
+                <h2 class="h2"><span class="mark">ABOUT</span> ME</h2>
+            </div>
+            <div class="flex flex-col gap-6 md:grid grid-cols-2 justify-center justify-items-center items-center">
+                <p data-aos="fade-blur" data-aos-delay="150" class="p">I'm a Front-End Developer with a degree in Business (BIS), combining a strong foundation in
+                     business and programming to build technology that supports real-world needs.
+                    I’ve strengthened my skills through external courses and hands-on experience, 
+                    delivering more than 6 web projects across different fields.
+                    With a background in marketing and branding, I see websites as strategic business tools — 
+                    not just visual designs. I build responsive, user-focused interfaces that strengthen brand identity and drive results.
+                    Currently, I’m advancing my skills in modern JavaScript and React by developing practical, 
+                    high-performance web applications</p>
+                <div data-aos="fade-blur" data-aos-delay="300" class="my-[60px] relative w-64 h-40 bg-[#ffffff29] rounded-3xl border-4 border-dashed border-[var(--primary-cl)]">
+                    <img src="photos/bis.png" alt="" class="absolute -top-12 left-6 w-28 h-28 rounded-full scalll">
+                    <img src="photos/uni-150.png" alt="" class="absolute -top-12 -right-6 w-28 h-28 rounded-full scalll">
+                    <img src="photos/sef.jpeg" alt="" class="absolute -bottom-12 -right-6 w-28 h-28 rounded-full scalll">
+                    <img src="photos/الشهاده.jpeg" alt="" class="absolute -bottom-[60px]  left-10 w-[90px]  scalll ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br id="Services">
+    <section id="Services">
+        <div class="container ">
+            <div data-aos="fade-blur" class="title">
+                <h2 class="h2"><span class="mark">what i can do</span>  for your dusiness</h2>
+            </div>
+            <div data-aos="fade-blur" data-aos-delay="300" class="grid grid-rows-1  gap-10 md:grid-cols-2 lg:grid-cols-4 justify-center justify-items-center items-start mt-10">
+                <div id="sr-card" class="relative p-4 bg-[var(--bg)] w-[330px] md:h-[250px] space-y-2 rounded-3xl lg:h-[auto] lg:w-[auto]">
+                    <div class="flex gap-4 items-center">
+                        <i class="fa-solid fa-code"></i>
+                        <h4 class="h3">Custom Business Website</h4>
+                    </div>
+                    <p class="p"> I build responsive, modern websites tailored to your business goals. 
+                        From landing pages to multi-page 
+                        websites, I focus on clean structure, performance, and user-friendly design.
+                    </p>
+                </div>
+                <div id="sr-card" class="relative p-4 bg-[var(--bg)] w-[330px] md:h-[250px] space-y-2 rounded-3xl lg:h-[auto] lg:w-[auto]">
+                    <div class="flex gap-4 items-center">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h4 class="h3">Landing Page Development</h4>
+                    </div>
+                    <p class="p">  I create conversion-focused landing pages designed to support marketing campaigns, highlight key offers, and turn visitors into customers.
+                    </p>
+                </div>
+                <div id="sr-card" class="relative p-4 bg-[var(--bg)] w-[330px] md:h-[250px] space-y-2 rounded-3xl lg:h-[auto] lg:w-[auto]">
+                    <div class="flex gap-4 items-center">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h4 class="h3">UI/UX Design</h4>
+                    </div>
+                    <p class="p">I design intuitive and visually appealing interfaces that improve user experience and guide visitors toward meaningful actions. Every layout is structured with clarity and usability in mind.
+                    </p>
+                </div>
+                <div id="sr-card" class="relative p-4 bg-[var(--bg)] w-[330px] md:h-[250px] space-y-2 rounded-3xl lg:h-[auto] lg:w-[auto]">
+                    <div class="flex gap-4 items-center">
+                        <i class="fa-solid fa-gear"></i>
+                        <h4 class="h3">Website Optimization & Redesign</h4>
+                    </div>
+                    <p class="p"> I improve existing websites by enhancing design, responsiveness, performance, and user flow. Whether it’s a visual refresh or structural improvement, I help elevate your online presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br id="Experience">
+    <section class="back-ex" >
+        <div class="container">
+            <div class="md:flex  items-start  justify-center gap-6 space-y-10 md:space-y-0">
+                <div>
+                    <div data-aos="fade-blur" data-aos-delay="0" class="title">
+                        <h2 class="h2"><span class="mark">MY</span>  Experience</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div data-aos="fade-blur" data-aos-delay="150" class="space-y-2">
+                            <div class="flex gap-3 items-center">
+                                <div class="w-6 h-6 bg-[var(--primary-cl)] rounded-full outline-dashed outline-2 outline-white "></div>
+                                <h4 class="h4">Freelance Front-End Developer</h4>
+                            </div>
+                            <p class="p-lit pl-8">Interior Finishing Company – Tanta | 2025 – Present</p>
+                            <ul class="list-disc list-inside pl-8">
+                                <li class="p">Designed and developed a responsive business website aligned with the company’s brand identity.</li>
+                                <li class="p">Structured content and layout to clearly present services and improve user navigation.</li>
+                                <li class="p">Optimized performance and responsiveness across different devices.</li>
+                                <li class="p">Currently enhancing features and preparing the final version for official launch.</li>
+                            </ul>
+                        </div>
+                        <div data-aos="fade-blur" data-aos-delay="150" class="space-y-2">
+                            <div class="flex gap-3 items-center">
+                                <div class="w-6 h-6 bg-[var(--primary-cl)] rounded-full outline-dashed outline-2 outline-white "></div>
+                            <h4 class="h4">Freelance Digital Marketing & Branding</h4>
+                            </div>
+                            <p class="p-lit pl-8">Interior Finishing Company – Tanta | 2025 – Present</p>
+                            <ul class="list-disc list-inside pl-8">
+                                <li class="p">Managed the company’s social media presence and supported brand positioning.</li>
+                                <li class="p">Created visual and promotional content aligned with the brand identity.</li>
+                                <li class="p">Applied marketing principles to improve engagement and strengthen online presence.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div data-aos="fade-blur" data-aos-delay="0" class="title">
+                        <h2 class="h2"> Education <span class="mark">& Training</span> </h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div data-aos="fade-blur" data-aos-delay="150" class="space-y-2">
+                            <div class="flex gap-3 items-center">
+                                <div class="w-6 h-6 bg-[var(--primary-cl)] rounded-full outline-dashed outline-2 outline-white "></div>
+                            <h4 class="h4">Full-Stack Development Program (In Progress)</h4>
+                            </div>
+                            <p class="p-lit pl-8">SEF Academy | 2025 – Present</p>
+                            <ul class="list-disc list-inside pl-8">
+                                <li class="p">Completed HTML, CSS, JavaScript, Tailwind, and Bootstrap.</li>
+                                <li class="p">Currently advancing into React and back-end development.</li>
+                                <li class="p">Built three practical projects applying modern front-end concepts.</li>
+                            </ul>
+                        </div>
+                        <div data-aos="fade-blur" data-aos-delay="150" class="space-y-2">
+                            <div class="flex gap-3 items-center">
+                                <div class="w-6 h-6 bg-[var(--primary-cl)] rounded-full outline-dashed outline-2 outline-white "></div>
+                                <h4 class="h4">UI/UX Design Training</h4>
+                            </div>
+                            <p class="p-lit pl-8">Creativa – Mansoura | 2 Months</p>
+                            <ul class="list-disc list-inside pl-8">
+                                <li class="p">Studied user experience principles and interface design fundamentals.</li>
+                                <li class="p">Completed a full practical UI/UX project from research to final prototype.</li>
+                            </ul>
+                        </div>
+                        <div data-aos="fade-blur" data-aos-delay="150" class="space-y-2">
+                            <div class="flex gap-3 items-center">
+                                <div class="w-6 h-6 bg-[var(--primary-cl)] rounded-full outline-dashed outline-2 outline-white "></div>
+                                <h4 class="h4">Front-End Development Track</h4>
+                            </div>
+                            <p class="p-lit pl-8">Elzero Web School | 3 Months</p>
+                            <ul class="list-disc list-inside pl-8">
+                                <li class="p">Studied HTML and CSS fundamentals.</li>
+                                <li class="p">Built two responsive web projects.</li>
+                                <li class="p">Developed a strong foundation in layout structure and clean code practices.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="md:grid-cols-2 grid items-start justify-center justify-items-center gap-6">
+                <div class="">
+                    <div data-aos="fade-blur" class="title">
+                        <h2 class="h2"><span class="mark">Why Work With</span> Me</h2>
+                    </div>
+                    <ul data-aos="fade-blur" data-aos-delay="150" class="">
+                        <li data-aos="fade-blur" data-aos-delay="150" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                            I combine technical skills with real business understanding. With a background in Business Information
+                             Systems and hands-on experience in marketing and branding, I don’t just build websites
+                            I build digital experiences that serve business goals.</li>
+                        <li data-aos="fade-blur" data-aos-delay="300" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                             I focus on clean structure, responsive design, and user-friendly interfaces that help brands communicate 
+                             clearly and grow confidently online.</li>
+                        <li data-aos="fade-blur" data-aos-delay="450" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                              I dedicate full focus to each project, ensuring high quality and timely delivery with clear communication 
+                              throughout the process.</li>
+                        <li data-aos="fade-blur" data-aos-delay="600" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                               Let’s build something that works — not just something that looks good.</li>
+                    </ul>
+                </div>
+                <div class="flex-col gap-8 flex items-center justify-center">
+                    <div data-aos="fade-blur" data-aos-delay="600"  class="circle mt-2 ">
+                        <img src="photos/me 2.png" alt="">
+                    </div>
+                    <button data-aos="fade-blur" data-aos-delay="600" class="bot bot-log h3"><a href="https://wa.me/201027958582" target="_blank">HIRE ME NOW</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="container">
+            <div data-aos="fade-blur" class="title">
+                <h2 class="h2"><span class="mark">MY</span>  Skills</h2>
+            </div>
+            <div class="space-y-8">
+                <div class="space-y-4 lg:space-y-2">
+                    <div data-aos="fade-blur" data-aos-delay="0" class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">technical skills</h3>
+                    </div>
+                    <div class="flex  justify-center  ">
+                        <div data-aos="fade-blur" data-aos-delay="150" class="flex flex-col gap-4 justify-center lg:items-start">
+                            <div class="">
+                                <h4 class="h4">Front-end</h4>
+                            </div>
+                            <div data-aos="fade-blur" data-aos-delay="300" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-2 justify-items-center">
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-html5 text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">HTML</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-css3-alt text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">CSS</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-bootstrap text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">Bootstrap</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-css3-alt text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">Tailwind</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-js text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">JavaScript</h5>
+                                </div>
+                                <!-- <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-react text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">React</h5>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 lg:space-y-2 lg:flex lg:justify-center items-end gap-2">
+                        <div class="flex flex-col gap-4 justify-center items-center lg:items-start">
+                            <div data-aos="fade-blur" data-aos-delay="300" class="">
+                                <h4 class="h4">Tools</h4>
+                            </div>
+                            <div data-aos="fade-blur" data-aos-delay="300" class="grid grid-cols-2 gap-2 lg:gap-2 justify-items-center">
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-github text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">GitHub</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="devicon-vscode-plain text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">VS Code</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 justify-center items-center lg:items-start">
+                            <div data-aos="fade-blur" data-aos-delay="300" class="">
+                                <h4 class="h4">Design & UI</h4>
+                            </div>
+                            <div data-aos="fade-blur" data-aos-delay="300" class="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-2 justify-items-center">
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="fa-brands fa-figma text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">Figma</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="devicon-photoshop-plain text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">photoshop</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <h5 class="h5">DaVinci Resolve</h5>
+                                </div>
+                                <div class="bot flex gap-2 items-center justify-center">
+                                    <i class="devicon-canva-plain text-2xl text-[var(--bg)]"></i>
+                                    <h5 class="h5">canva</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div data-aos="fade-blur"  class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">soft skills</h3>
+                    </div>
+                    <div data-aos="fade-blur" data-aos-delay="150" class="flex flex-col gap-4 justify-center items-center">
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 lg:gap-2 justify-items-center">
+                            <div class="bot flex gap-2 items-center justify-center">
+                                <h5 class="h5">Problem Solving</h5>
+                            </div>
+                            <div class="bot flex gap-2 items-center justify-center">
+                                <h5 class="h5">Communication</h5>
+                            </div>
+                            <div class="bot flex gap-2 items-center justify-center text-lg">
+                                <h5 class="text-[14px] text-[var(--bg)] font-extrabold">Attention to Detail</h5>
+                            </div>
+                            <div class="bot flex gap-2 items-center justify-center">
+                                <h5 class="text-[14px] text-[var(--bg)] font-extrabold">Time Management</h5>
+                            </div>
+                            <div class="bot flex gap-2 items-center justify-center">
+                                <h5 class="h5">Fast Learner</h5>
+                            </div>
+                            <div class="bot flex gap-2 items-center justify-center">
+                                <h5 class="h5">Adaptability</h5>
+                            </div>
+                            <div class="bot flex gap-2 items-center justify-center">
+                                <h5 class="text-[14px] text-[var(--bg)] font-extrabold">Team Collaboration</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br id="projects">
+    <section >
+        <div class="container ">
+            <div data-aos="fade-blur" class="title">
+                <h2 class="h2"><span class="mark">MY</span>  projects</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6 xl:p-10">
+                <div data-aos="fade-blur" data-aos-delay="0">
+                    <div  class=" rounded-2xl space-y-4 proj-card">
+                        <img src="photos/1.png" alt="" class="rounded-t-2xl">
+                        <div class="space-y-4 p-4 flex flex-col justify-center items-center ">
+                            <div class="space-y-4">
+                                <h4 class="h4 -mt-4">Interior Design Website</h4>
+                                <p class="p-lit ">HTML - CSS</p>
+                                <P class="p">A responsive website for an interior finishing 
+                                    company showcasing services and projects.</P>
+                            </div>
+                            <div class="bot-box w-[270px]">
+                                <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/Diar-Plus/" target="_blank">Live Preview</a></button>
+                                <button class="bot h5 w-[125px]"><a href="project 1.html" target="_blank"> Case Study</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-blur" data-aos-delay="0">
+                    <div  class=" rounded-2xl space-y-4 proj-card">
+                        <img src="photos/2.png" alt="" class="rounded-t-2xl">
+                        <div class="space-y-4 p-4 flex flex-col justify-center items-center ">
+                            <div class="space-y-4">
+                                <h4 class="h4 -mt-4">Pets Care</h4>
+                                <p class="p-lit ">HTML - CSS</p>
+                                <P class="p">A responsive website for a Veterinary clinic  
+                                     showcasing services and other details .</P>
+                            </div>
+                            <div class="bot-box w-[270px]">
+                                <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/Pets-Care/" target="_blank">Live Preview</a></button>
+                                <button class="bot h5 w-[125px]"><a href="project 2.html" target="_blank"> Case Study</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-blur" data-aos-delay="0">
+                    <div  class=" rounded-2xl space-y-4 proj-card">
+                        <img src="photos/3.png" alt="" class="rounded-t-2xl">
+                        <div class="space-y-4 p-4 flex flex-col justify-center items-center ">
+                            <div class="space-y-4">
+                                <h4 class="h4 -mt-4">egypt's hidding games</h4>
+                                <p class="p-lit ">HTML - CSS - JS</p>
+                                <P class="p">website showcasing places in Egypt, built as a graduation project to 
+                                    combine design and practical front-end skills.</P>
+                            </div>
+                            <div class="bot-box w-[270px]">
+                                <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/egypt-s-hidding-games/" target="_blank">Live Preview</a></button>
+                                <button class="bot h5 w-[125px]"><a href="project 3.html" target="_blank"> Case Study</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-blur" data-aos-delay="0">
+                    <div  class=" rounded-2xl space-y-4 proj-card">
+                        <img src="photos/4.png" alt="" class="rounded-t-2xl">
+                        <div class="space-y-4 p-4 flex flex-col justify-center items-center ">
+                            <div class="space-y-4">
+                                <h4 class="h4 -mt-4">GrowthHub</h4>
+                                <p class="p-lit ">HTML - tailwind CSS</p>
+                                <P class="p">responsive website built as a practical exercise during my Front-End course, using 
+                                    Tailwind CSS only to create a clean and scalable UI layout.</P>
+                            </div>
+                            <div class="bot-box w-[270px]">
+                                <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/tailwind-project/" target="_blank">Live Preview</a></button>
+                                <button class="bot h5 w-[125px]"><a href="project 4.html" target="_blank"> Case Study</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-blur" data-aos-delay="0">
+                    <div  class=" rounded-2xl space-y-4 proj-card">
+                        <img src="photos/5.png" alt="" class="rounded-t-2xl">
+                        <div class="space-y-4 p-4 flex flex-col justify-center items-center ">
+                            <div class="space-y-4">
+                                <h4 class="h4 -mt-4">ULCS</h4>
+                                <p class="p-lit ">HTML - CSS</p>
+                                <P class="p">clean and responsive landing page , designed as a foundation for
+                                     small business websites and a starting point for interactive features.</P>
+                            </div>
+                            <div class="bot-box w-[270px]">
+                                <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/ulcs-/" target="_blank">Live Preview</a></button>
+                                <button class="bot h5 w-[125px]"><a href="project 5.html" target="_blank"> Case Study</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-blur" data-aos-delay="0">
+                    <div  class=" rounded-2xl space-y-4 proj-card">
+                        <img src="photos/6.png" alt="" class="rounded-t-2xl">
+                        <div class="space-y-4 p-4 flex flex-col justify-center items-center ">
+                            <div class="space-y-4">
+                                <h4 class="h4 -mt-4">BMI</h4>
+                                <p class="p-lit ">HTML - CSS - JS</p>
+                                <P class="p">simple and interactive web app that calculates Body Mass Index (BMI) and helps users understand their weight category .</P>
+                            </div>
+                            <div class="bot-box w-[270px]">
+                                <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/BIM/" target="_blank">Live Preview</a></button>
+                                <button class="bot h5 w-[125px]"><a href="project 6.html" target="_blank"> Case Study</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <br id="contact">
+    <section >
+        <div class="container space-y-4 md:space-y-0 md:grid md:grid-cols-2 gap-4">
+            <div class="space-y-4">
+                <div data-aos="fade-blur" class="title">
+                    <h2 class="h2"><span class="mark">Contact</span>  Me</h2>
+                </div>
+                <div class="space-y-4 ">
+                    <p data-aos="fade-blur" data-aos-delay="150" class="p">
+                        If you're looking for a front-end developer to build a modern, responsive website or improve your existing one, feel free to reach out.
+                        I'm always open to discussing new projects, freelance opportunities, or collaboration.
+                        Let's build something great together.
+                    </p>
+                    <p data-aos="fade-blur" data-aos-delay="300" class="p text-[var(--primary-cl)]">
+                       Thank you for taking the time to visit my portfolio. I truly appreciate your
+                        interest in my work, and I look forward to connecting with you.
+                    </p>
+                    <div class="flex justify-center ">
+                        <div data-aos="fade-blur" data-aos-delay="450" class="bot-box bot w-[250px]">
+                            <a href="https://wa.me/201027958582" target="_blank" class="h3 text-[var(--bg)] ">Let's Work Together</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div data-aos="fade-blur" class="title">
+                    <h2 class="h2"><span class="mark">Thank </span>  You</h2>
+                </div>
+                <div class="space-y-4 ">
+                    <p data-aos="fade-blur" data-aos-delay="150" class="p">
+                        Thank you for taking the time to visit my portfolio. I 
+                        truly appreciate your interest in my work, and I look forward to connecting with you.
+                    </p>
+                    <div data-aos="fade-blur" data-aos-delay="300" class="flex gap-4 justify-center py-4">
+                        <a href="https://github.com/amar754" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                        <a href="https://www.linkedin.com/in/amar-abdallh-2476303b1/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                        <a href="https://wa.me/201027958582" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amarabdullah.div@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-envelope hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                        <a href="https://www.facebook.com/amar.baktout/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook-f  hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                        <a href="https://www.instagram.com/3mar_abdallh/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram  hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-[var(--primary-cl)] mt-10" >
+            <div class="container  ">
+                <div class="flex flex-col gap-2 md:flex-row justify-between items-center p-4">
+                    <p class="p">© 2026 Amar Abdallah. Built with passion.</p>
+                    <p class="p-lit text-white">Portfolio v1.0</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+        <div class="fixed bottom-8 right-6 flex flex-col gap-3 z-30">
+    <!-- زرار واتساب -->
+        <a href="https://wa.me/201234567890"target="_blank"
+            class="bg-[var(--primary-cl)]  w-11 h-11 flex items-center justify-center rounded-full bobub ">
+            <i class="fa-brands fa-whatsapp text-[var(--bg)]"></i>
+        </a>
+    <!-- زرار الطلوع لفوق -->
+        <button id="scrollBtn" onclick="scrollToTop()" class="hidden bg-[var(--primary-cl)]  w-11 h-11 flex items-center justify-center rounded-full bobub">
+            <i class="fa-solid fa-arrow-up text-[var(--bg)]"></i>
+        </button>
+    </div>
+
+
+
+
+
+            <!-- Mobile Menu Script -->
+        <script>
+        const btn = document.getElementById("menuBtn")
+        const menu = document.getElementById("mobileMenu")
+        btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden")
+        })
+
+        const scrollBtn = document.getElementById("scrollBtn")
+        window.addEventListener("scroll", function(){
+        if(window.scrollY > 200){
+            scrollBtn.classList.remove("hidden")
+        } else{
+            scrollBtn.classList.add("hidden")
+        }
+        })
+
+        function scrollToTop(){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+        }
+        </script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            once: true,
+            duration: 800,
+            easing: "ease-out-cubic"
+            });
+        </script>
+</body>
+

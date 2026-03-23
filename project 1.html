@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>project 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        [data-aos="fade-blur"]{
+        opacity:0;
+        transform: translateY(40px);
+        filter: blur(8px);
+        transition-property: opacity, transform, filter;
+        }
+        [data-aos="fade-blur"].aos-animate{
+        opacity:1;
+        transform: translateY(0);
+        filter: blur(0);
+        }
+    </style>
+</head>
+<body class="space-y-16 lg:space-y-20 ">
+    <nav class=" shadow-md fixed w-full z-10   ">
+        <div class="container max-w-7xl mx-auto px-6 py-3 flex justify-between md:justify-center items-center">
+            <a href="index.html"><h1 class="h1 md:hidden  py-2">
+            <span class=" bg-[var(--primary-cl)] rounded-full pl-3 py-1 aline-center ">A </span>MAR
+            </h1></a>
+            <!-- menu desktop -->
+            <ul class="hidden md:flex gap-4  items-center">
+                <li class="hover:scale-105 transition duration-500"><a href="project 1.html" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Project 1</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 2.html" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Project 2</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 3.html" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Project 3</a></li>
+                <li><a href="index.html" ><h1 class="h1 py-2 md:px-2 lg:px-4 md:text-3xl lg:text-4xl "><span class=" bg-[var(--primary-cl)] rounded-full pl-3 py-1 aline-center">A </span>MAR
+                </h1></a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 4.html" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Project 4</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 5.html" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Project 5</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 6.html" class="hover:text-[var(--primary-cl)] transition duration-500 md:font-bold lg:font-extrabold">Project 6</a></li>
+            </ul>
+
+            <!-- mobile menu button -->
+            <button id="menuBtn" class="md:hidden text-3xl text-[var(--primary-cl)]">
+            ☰
+            </button>
+         </div>
+        <!-- mobile menu -->
+        <div id="mobileMenu" class="hidden px-6 pb-4 md:hidden">
+            <ul class="flex flex-col gap-6 mt-4">
+                <li class="hover:scale-105 transition duration-500"><a href="index.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Home</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 1.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Project 1</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 2.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Project 2</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 3.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Project 3</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 4.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Project 4</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 5.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Project 5</a></li>
+                <li class="hover:scale-105 transition duration-500"><a href="project 6.html" class="hover:text-[var(--primary-cl)] transition duration-500 ">Project 6</a></li>
+            </ul>
+            <div class="flex gap-4 justify-center py-8">
+                <a href="https://github.com/amar754" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://www.linkedin.com/in/amar-abdallh-2476303b1/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://wa.me/201027958582" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amarabdullah.div@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://www.facebook.com/amar.baktout/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f text-[var(--bg)]  hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+                <a href="https://www.instagram.com/3mar_abdallh/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram text-[var(--bg)] hover:text-[var(--primary-cl)] transition duration-500 hover:scale-110"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container py-16 md:flex gap-8">
+            <div class="space-y-4">
+                <img src="photos/pro 1.png" alt="">
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                            <h3 class="h3">Project Overview</h3>
+                        </div>
+                        <p class="p">
+                           Diar Plus is an interior finishing company based in Tanta, Egypt, specializing in high-end residential 
+                           and commercial projects, including apartments, villas, offices, and rooftops.
+                            The goal of this project was to design and develop a modern landing page that reflects the company’s 
+                            premium positioning and builds trust with potential clients.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                            <h3 class="h3">The Problem</h3>
+                        </div>
+                        <p class="p">
+                            Before the website, Diar Plus relied entirely on social media for marketing and client acquisition.
+                            This created several challenges:
+                            Lack of credibility and professional online presence , Difficulty showcasing projects in an organized way , High number of inquiries with low conversion rates
+                             and Clients needed more reassurance before making decisions
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                            <h3 class="h3">The Goal</h3>
+                        </div>
+                        <p class="p">
+                            The main objectives of the website were: Present the company’s work in a structured and professional way ,Build trust and 
+                            strengthen the brand image and Encourage potential clients to take action (contact / inquiry)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">Features</h3>
+                    </div>
+                    <ul class="list-disc list-inside ">
+                        <li class="p">Responsive landing page design</li>
+                        <li class="p">Clean and modern layout</li>
+                        <li class="p">Hero section with clear value proposition</li>
+                        <li class="p">Services section highlighting offerings</li>
+                        <li class="p">Projects section to showcase previous work</li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">My Role</h3>
+                    </div>
+                    <p class="p">
+                        Designed the full UI of the landing page and Developed the website using HTML & CSS
+                        Structured content to align with marketing and conversion goals 
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">Challenges</h3>
+                    </div>
+                    <p class="p">
+                        Translating a premium offline service into a strong online presence and Building trust without an existing
+                         website and Structuring content in a way that reduces user hesitation
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">Results</h3>
+                    </div>
+                    <p class="p">
+                        The project is currently under review with the client before official launch. However, the new website is expected to:
+                    </p>
+                    <ul class="list-disc list-inside ">
+                        <li class="p">Improve brand perception</li>
+                        <li class="p">Increase trust among potential clients</li>
+                        <li class="p">Generate more qualified leads</li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-0.5 bg-[var(--primary-cl)]"></div>
+                        <h3 class="h3">Future Improvements</h3>
+                    </div>
+                    <ul class="list-disc list-inside ">
+                        <li class="p">Converting the landing page into a full multi-page website</li>
+                        <li class="p">Adding dynamic content (projects filtering, galleries)</li>
+                        <li class="p">Integrating JavaScript for better interactivity</li>
+                        <li class="p">Performance optimization</li>
+                        <li class="p">SEO enhancements</li>
+                    </ul>
+                </div>
+                <div class="bot-box w-[270px]">
+                    <button class="spis-w bot h5 w-[125px]"><a href="https://amar754.github.io/Diar-Plus/" target="_blank">Live Preview</a></button>
+                    <button class="bot h5 w-[125px]"><a href="https://github.com/amar754/project-2" target="_blank">  GitHub </a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Mobile Menu Script -->
+        <script>
+        const btn = document.getElementById("menuBtn")
+        const menu = document.getElementById("mobileMenu")
+        btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden")
+        })
+        </script>
+    
+</body>
+</html>
