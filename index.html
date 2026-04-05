@@ -26,6 +26,15 @@
         transform: translateY(0);
         filter: blur(0);
         }
+        #mobileMenu{
+        opacity: 0;
+        transform: translateY(-12px);
+        transition: opacity 0.5s ease, transform 0.8s ease;
+        }
+        #mobileMenu.menu-open{
+        opacity: 1;
+        transform: translateY(0);
+        }
     </style>
 </head>
 <body class="space-y-16 lg:space-y-20 ">
@@ -321,18 +330,18 @@
                     <div data-aos="fade-blur" class="title">
                         <h2 class="h2"><span class="mark">Why Work With</span> Me</h2>
                     </div>
-                    <ul data-aos="fade-blur" data-aos-delay="150" class="">
-                        <li data-aos="fade-blur" data-aos-delay="150" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                    <ul data-aos="fade-blur" data-aos-delay="150" class=" space-y-3">
+                        <li data-aos="fade-blur" data-aos-delay="150" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)] mt-1"></span>
                             I combine technical skills with real business understanding. With a background in Business Information
                              Systems and hands-on experience in marketing and branding, I don’t just build websites
                             I build digital experiences that serve business goals.</li>
-                        <li data-aos="fade-blur" data-aos-delay="300" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                        <li data-aos="fade-blur" data-aos-delay="300" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)] mt-1"></span>
                              I focus on clean structure, responsive design, and user-friendly interfaces that help brands communicate 
                              clearly and grow confidently online.</li>
-                        <li data-aos="fade-blur" data-aos-delay="450" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                        <li data-aos="fade-blur" data-aos-delay="450" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)] mt-1"></span>
                               I dedicate full focus to each project, ensuring high quality and timely delivery with clear communication 
                               throughout the process.</li>
-                        <li data-aos="fade-blur" data-aos-delay="600" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)]"></span>
+                        <li data-aos="fade-blur" data-aos-delay="600" class="p flex items-start"> <span class="p-2 mark rounded-full mr-4 bg-[var(--primary-cl)] mt-1"></span>
                                Let’s build something that works — not just something that looks good.</li>
                     </ul>
                 </div>
@@ -658,8 +667,30 @@
         <script>
         const btn = document.getElementById("menuBtn")
         const menu = document.getElementById("mobileMenu")
+        const menuLinks = menu.querySelectorAll("a")
+        const closeMenu = () => {
+        menu.classList.remove("menu-open")
+        setTimeout(() => {
+            menu.classList.add("hidden")
+        }, 300)
+        }
+        const openMenu = () => {
+        menu.classList.remove("hidden")
+        requestAnimationFrame(() => {
+            menu.classList.add("menu-open")
+        })
+        }
         btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden")
+        if (menu.classList.contains("hidden")) {
+            openMenu()
+        } else {
+            closeMenu()
+        }
+        })
+        menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            closeMenu()
+        })
         })
 
         const scrollBtn = document.getElementById("scrollBtn")
@@ -677,6 +708,8 @@
             behavior: "smooth"
         })
         }
+
+
         </script>
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script>
